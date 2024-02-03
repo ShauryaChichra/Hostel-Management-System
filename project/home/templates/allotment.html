@@ -1,0 +1,17 @@
+<html>
+    <h1>You have been alloted hostel</h1>
+    <form method = "post" action="/fee/">
+        {% csrf_token %}
+    <p>Select room: 
+        <select class="form-select" id = 'preference' name  ='preference' aria-label="Default select example">
+            <option selected>Open this select menu</option>    
+            {%for x in details%}
+            <option value = "{{x}}" >{{x}}</option>
+            {%endfor%}
+        </select>
+    <button type = "submit">submit</button>
+    </form>
+    </center>
+
+</p>
+</html>

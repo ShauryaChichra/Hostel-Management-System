@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<br>
+<h2>ENTER YOUR DETAILS</h2>
+
+
+
+<form method = "post" action="info/">
+
+{% csrf_token %}
+
+
+  <label for="rollno">Roll Number</label><br>
+  <input type="text" class="form-control" id="rollno" name="rollno"><br>
+  <label for="dob">D.O.B.:</label><br>
+  <input type="text" class="form-control" id="dob" name="dob"><br><br>
+
+  <button type = "submit">Submit</button>
+
+</form> 
+
+
+</center>
+
+</body>
+</html>
