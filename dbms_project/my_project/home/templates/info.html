@@ -1,0 +1,30 @@
+<html>
+</br>
+    <center>
+    <h1>STUDENT DETAILS</h1>
+    <table border = "1" cellpadding = "5" cellspacing = "1">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>CGPA</th>
+            <th>Hostel</th>
+            <th>Room</th>
+            <th>Fee Status</th>
+        </tr>
+        <tr>
+            <td>{{rn}}</td>
+            <td>{{fn}} {{ln}}</td>
+            <td>{{cg}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</br>
+<form method = "post" action="/allotment/">
+{% csrf_token %}
+<button type = "submit">Allotment</button>
+</form>
+</center>
+
+</html>
